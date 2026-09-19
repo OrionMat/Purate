@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { initialMedia } from '../data/media'
 import type { MediaItem, MediaStatus, MediaType, Sort } from '../types/media'
+// Keep the original storage key so rebranding preserves existing library edits.
 const key = 'tasteai-library'
 export function useMediaLibrary() {
  const [error,setError]=useState('')
